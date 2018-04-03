@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar CSS Dasar</title>
+        <meta name="viewport" content="width=device-widht, initial-scale=l">
+     <style type="text/css">
+         body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+			#box1{
+                position: absolute;
+                z-index: 1;
+				width:250px;
+				height:150px;
+                left: 0px;
+                top : 0px;
+				background:#8B4513;
+                
+			}
+			#box2{
+                position: absolute;
+                z-index: 2;
+				width:200px;
+				height:100px;
+                left: 10px;
+                top : 10px;
+                padding : 15px;
+				background: #DEB887;
+                border-radius:20px;
+              
+			}
+         
+			#box3{
+                position: relative;
+                z-index: 3;
+				width:200px;
+				height:100px;
+                left:0px;
+                top: 180px;
+                padding : 30px;
+                font-weight: bold;
+                color: aliceblue;
+				background: #4682B4;
+                border: 10px solid #F8F8FF;
+                
+			}
+            #segitiga1{
+                position: absolute;
+                z-index: 4;
+				width:0px;
+				height:0px;
+               left:18px;
+                top: 198px;
+                border-top: 15px solid #F8F8FF;
+                border-right: 15px solid #4682B4; 
+                
+			}
+           #segitiga2{
+                position: absolute;
+                z-index: 5;
+				width:0px;
+				height:0px;
+                left:263px;
+                top: 198px;
+                border-top: 15px solid #F8F8FF;
+                border-left: 15px solid #4682B4; 
+                
+			}
+            #segitiga3{
+                position: absolute;
+                z-index: 6;
+				width:0px;
+				height:0px;
+                left:263px;
+                top: 343px;
+                border-bottom: 15px solid #F8F8FF;
+                border-left: 15px solid #4682B4; 
+                
+			}
+            #segitiga4{
+                position: absolute;
+                z-index: 7;
+				width:0px;
+				height:0px;
+                left:18px;
+                top: 343px;
+                border-bottom: 15px solid #F8F8FF;
+                border-right: 15px solid #4682B4; 
+         }
+		    #box5{
+        margin-top: 110px;
+        margin-left: 10px;
+        width: 500px;
+        height: 100px;
+         
+    }
+    .button {
+        margin-top: 110px;
+        margin-left: 10px;
+        width: 150px;
+        height: 30px;
+        transform: skew(30deg);
+        background: #3399ff;
+       float: left;
+       padding-top: 10px;
+       text-align: center;
+
+    }
+    span{
+         color: white;
+        font-weight: bold;
+				
+         }
+          #amplop{
+                position: relative;
+                left: 20px;
+				width:250px; 
+                height: 100px; 
+                margin-bottom:55px; 
+                border:15px solid transparent;
+                background: #feb;
+                top: 100px;
+                padding : 35px;
+                background-image: -moz-linear-gradient(#feb, #feb), 
+                -moz-repeating-linear-gradient(-45deg, #d50, #d50 15px, transparent 15px, transparent 30px, #15c 30px, #15c 45px, transparent 45px, transparent 60px);
+                background-image: -ms-linear-gradient(#feb, #feb), 
+                -ms-repeating-linear-gradient(-45deg, #d50, #d50 15px, transparent 15px, transparent 30px, #15c 30px, #15c 45px, transparent 45px, transparent 60px);
+                background-image: -o-linear-gradient(#feb, #feb), 
+                -o-repeating-linear-gradient(-45deg, #d50, #d50 15px, transparent 15px, transparent 30px, #15c 30px, #15c 45px, transparent 45px, transparent 60px);
+                background-image: -webkit-linear-gradient(#feb, #feb), 
+                -webkit-repeating-linear-gradient(-45deg, #d50, #d50 15px, transparent 15px, transparent 30px, #15c 30px, #15c 45px, transparent 45px, transparent 60px);
+                background-clip: padding-box, border-box;
+                background-origin: border-box;
+				
+         }
+ #box6{
+        margin-top: 150px;
+        
+    }
+    .round1{
+        margin-left: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 110px;
+        background: #4C4C4B;
+        float: left;
+        transform: rotate(-45deg);
+      
+    }
+.shape-pacman1 { 
+  width: 0px; 
+  height: 0px; 
+  border-right: 100px solid #4C4C4B; 
+  border-top: 100px solid #55FF42; 
+  border-left: 100px solid #55FF42;
+    border-bottom: 100px solid #55FF42;
+  border-top-left-radius: 100px; 
+  border-top-right-radius: 102px; 
+    border-bottom-left-radius: 102px; 
+  border-bottom-right-radius: 100px; 
+}
+.shape-pacman { 
+  width: 0px; 
+  height: 0px; 
+  border-right: 100px solid #4C4C4B; 
+  border-top: 100px solid #55FF42; 
+  border-left: 100px solid #55FF42; 
+  border-top-left-radius: 100px; 
+  border-top-right-radius: 100px; 
+}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div id="box1"></div>
+		<div id="box2">Alhamdullilah mirip banged, SEMPURNA</div>
+        <div id="box3">SIAP, sudah fokus saya, kurang di warna </div>
+		<div id="segitiga1"></div>
+        <div id="segitiga2"></div>
+        <div id="segitiga3"></div>
+        <div id="segitiga4"></div>
+         <div id="box5">
+        <p class="button"><span><i>Klik Saya</i></span></p> <p class="button"><span><i>Klik Saya Saja</i></span></p>
+        </div>
+        <div id="amplop">Sedikit di percantik layaknya amplop sesungguhnya, amplop desain klasik masa lalu</div>
+        <div id="box6"><div class="round1"><div class="shape-pacman1"></div></div><div class="round1"><div class="shape-pacman"></div></div></div>
+	</body>
+</html>
